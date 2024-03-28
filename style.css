@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align:center ;
+    font-family: "Chewy", system-ui;
+    background-image: url(playful-tic-tac-toe-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+main{
+    overflow:visible;
+}
+h1{
+    font-size: 4.5rem;
+    color: white;
+    overflow: visible;
+    user-select: none;
+}
+.msg{
+    font-size: 3rem;
+    color: white;
+    overflow: visible;
+    user-select: none;
+}
+.container{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20rem;
+    width: 18rem;
+    min-height: 15rem;
+    min-width: 15rem;
+    user-select: none;
+    background: rgb(255,154,54);
+    background: linear-gradient(90deg, rgba(255,154,54,0.3) 0%, rgba(255,75,106,0.3) 100%);
+    border-radius: 1.5rem;
+    border: none;
+}
+.players{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0.5rem;
+    color: white;
+}
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    
+}
+.box{
+    height: 5rem;
+    width: 5rem;
+    min-height: 3rem;
+    min-width: 3rem;
+    font-size: 3rem;
+    font-family: "Chewy", system-ui;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: none;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    transition: all 235ms ease-in-out;
+    user-select: none;
+}
+
+.box:focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  transform: translate3d(0, 2px, 0);
+  
+}
+
+.box:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  
+}
+
+.reset, .newgame {
+    height: 3rem;
+    width: 8rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Chewy", system-ui;
+    border-radius: 2rem;
+    border: none;
+    transition: all 235ms ease-in-out;
+    background: linear-gradient(to bottom right, #b40fff, #fe8f3e);
+    user-select: none;
+}
+.reset:hover, .newgame:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+.reset:focus, .newgame:focus{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+.msg-container{
+    height:10rem;
+}
+.hide{
+    display: none;
+
+}
